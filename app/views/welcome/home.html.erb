@@ -13,27 +13,40 @@
       font-size: 30px;
     }
 
-        .image{
-          height: available;
-          width: available;
-        }
-
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
   </style>
   <meta charset="utf-8">
   <title>Homepage</title>
 </head>
 
 <body>
-<div class="text">
-  <h1 >Home Page</h1>
+<div class="center">
+  <%= image_tag 'home logo.jpg' %>
 </div>
-<br><br><br><br>
-<div class="image">
-  <%= image_tag 'home-01.jpg' %>
 
+<div>
+  <table style="width:100%">
+    <tr>
+      <td><%= image_tag 't-01.jpg' %></td>
+      <td><%= image_tag 't-02.jpg' %></td>
+    </tr>
+    <tr>
+      <td><%= image_tag 't-03.jpg' %></td>
+      <td><%= image_tag 't-04.jpg' %></td>
+    </tr>
+    <tr>
+      <td><%= image_tag 't-05.jpg' %></td>
+      <td><%= image_tag 't-06.jpg' %></td>
+    </tr>
+  </table>
 </div>
-<br><br><br><br>
-<%= link_to 'About Us', about_path %>
+
+<a href="about.html"><p class="link">About Us</p></a>
 <br><br><br><br>
 </body>
 </html>
