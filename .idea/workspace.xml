@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/about-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/about-01.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/home-01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/home-01.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -129,7 +129,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="687" />
     <option name="y" value="168" />
     <option name="width" value="695" />
@@ -282,15 +282,15 @@
       <workItem from="1546624108335" duration="3574000" />
       <workItem from="1546667092587" duration="1369000" />
       <workItem from="1546668479367" duration="2942000" />
-      <workItem from="1546672925048" duration="262000" />
+      <workItem from="1546672925048" duration="1101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9113000" />
+    <option name="totallyTimeSpent" value="9952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19664635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
