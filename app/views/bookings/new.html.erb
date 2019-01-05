@@ -1,0 +1,21 @@
+
+<h1 style="text-align: center"><u> Create An Article</u> </h1>
+<br><br><br><br>
+<%= form_for @bookings, url: {action: "new"} do |f| %>
+
+
+<p>
+  <%= f.label :Movie %><br>
+  <%= f.text_field :Movie %>
+</p>
+
+  <p>
+    <%= f.label :Description %><br>
+    <%= f.text_area :Movie %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
