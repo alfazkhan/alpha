@@ -6,10 +6,19 @@ def new
 end
 
 def create
-#render plain: params[:bookings].inspect
   @bookings = Bookings.new(bookings_params)
-  @bookings.save
-  redirect_to bookings_path(@bookings)
+  if @bookings.save
+   flash[:notice] = "Data was Added to Database"
+   redirect_to booking_path(@bookings)
+
+  else
+   render 'new'
+
+  end
+end
+
+def show
+@bookings = Bookings.find(params[:id])
 end
 
 private

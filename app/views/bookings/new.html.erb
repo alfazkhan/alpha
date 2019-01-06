@@ -1,6 +1,16 @@
 
 <h1 style="text-align: center"><u> Create An Article</u> </h1>
 <br><br><br><br>
+
+<% if @bookings.errors.any? %>
+  <h2>The Following errors Occured</h2>
+  <ul>
+    <% @bookings.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <%end %>
+  </ul>
+  <%end %>
+
 <%= form_for @bookings, url:{action: "create"} do |b| %>
 
 <p>
