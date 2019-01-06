@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/bookings_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/bookings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bookings.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/bookings/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bookings/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-    </list>
+    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -59,7 +52,7 @@
           <entry key="Gemfile" value="43" />
           <entry key="erb" value="798" />
           <entry key="md" value="104" />
-          <entry key="rb" value="1465" />
+          <entry key="rb" value="1479" />
           <entry key="yml" value="15" />
         </counts>
       </usages-collector>
@@ -68,7 +61,7 @@
           <entry key="Markdown" value="104" />
           <entry key="RHTML" value="798" />
           <entry key="RegExp" value="4" />
-          <entry key="Ruby" value="1504" />
+          <entry key="Ruby" value="1518" />
           <entry key="YAML" value="15" />
         </counts>
       </usages-collector>
@@ -97,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="125">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -135,9 +128,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/bookingss_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/bookings/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/bookings.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
       </list>
     </option>
   </component>
@@ -353,12 +346,12 @@
       <workItem from="1546700649353" duration="1669000" />
       <workItem from="1546707381282" duration="5638000" />
       <workItem from="1546714005685" duration="2973000" />
-      <workItem from="1546755678309" duration="8898000" />
+      <workItem from="1546755678309" duration="9056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30240000" />
+    <option name="totallyTimeSpent" value="30398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -517,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="125">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
