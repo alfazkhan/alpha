@@ -1,17 +1,21 @@
 class BookingsController < ApplicationController
-  def new
-  @bookings = Bookings.new
-  end
 
-  def create
-    @bookings = Bookings.new(arguments)
-    @bookings.save
-    redirect_to bookings_show(@bookings)
-  end
 
-  private
+def new
+@bookings =Bookings.new
+end
 
-  def arguments
-    params.require(:bookings).permit(:Movie,:Description)
-  end
+def create
+#render plain: params[:bookings].inspect
+  @bookings = Bookings.new(bookings_params)
+  @bookings.save
+  redirect_to bookings_path(@bookings)
+end
+
+private
+
+def bookings_params
+  params.require(:bookings).permit(:Movie,:Description)
+end
+
 end

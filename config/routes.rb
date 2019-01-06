@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'about' ,to: 'welcome#about'
   get 'test', to: 'welcome#test'
   resources :bookings
+
 end
