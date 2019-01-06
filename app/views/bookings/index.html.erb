@@ -20,10 +20,12 @@ border: 1px solid black;
   </tr>
   <% @bookings.each do |booking| %>
   <tr>
+    <td><%= booking.id %></td>
     <td><%= booking.Movie %></td>
     <td><%= booking.Description %></td>
     <td><button type="button"><%=link_to 'Edit', edit_booking_path(booking) %> </button></td>
     <td><button type="button"><%=link_to 'Show', booking_path(booking) %> </button></td>
+    <td><button type="button"><%=link_to 'Delete', booking_path(booking), method: :delete, data:{confirm: "Are you Sure?"} %> </button></td>
   </tr>
   <%end %>
 </table>

@@ -34,7 +34,14 @@ def update
   else
     render 'edit'
   end
-end
+  end
+
+  def destroy
+  @booking = Bookings.find(params[:id])
+  @booking.destroy
+    flash[:notice]="Movie Deleted from List"
+    redirect_to bookings_path
+  end
 
 private
 
