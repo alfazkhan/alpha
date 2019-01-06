@@ -37,10 +37,10 @@ def update
   end
 
   def destroy
-  @booking = Bookings.find(params[:id])
-  @booking.destroy
+  @bookings = Bookings.find(params[:id])
+  @bookings.destroy
     flash[:notice]="Movie Deleted from List"
-    redirect_to booking_path
+    redirect_to bookings_path(@bookings)
   end
 
 private
