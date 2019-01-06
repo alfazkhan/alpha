@@ -1,5 +1,8 @@
 class BookingsController < ApplicationController
 
+  def index
+    @bookings= Bookings.all
+  end
 
 def new
 @bookings =Bookings.new
@@ -10,15 +13,27 @@ def create
   if @bookings.save
    flash[:notice] = "Data was Added to Database"
    redirect_to booking_path(@bookings)
-
   else
    render 'new'
-
   end
+end
+
+def edit
+  @bookings = Bookings.find(params[:id])
 end
 
 def show
 @bookings = Bookings.find(params[:id])
+end
+
+def update
+  @bookings = Bookings.find(params[:id])
+  if @bookings.update(bookings_params)
+    flash[:notice] = "Booking Updated"
+    redirect_to booking_path(@bookings)
+  else
+    render 'edit'
+  end
 end
 
 private

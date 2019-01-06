@@ -1,0 +1,36 @@
+<h1 style="text-align: center"><u>Edit Booking</u></h1>
+
+<% if @bookings.errors.any? %>
+  <h2>The Following errors Occurred</h2>
+  <ul>
+    <% @bookings.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <%end %>
+  </ul>
+<%end %>
+
+<%= form_for @bookings, url:{action: "update"} do |b| %>
+
+  <p>
+    <%= b.label :Movie %><br>
+    <%= b.text_field :Movie %>
+  </p>
+
+  <p>
+    <%= b.label :Description %><br>
+    <%= b.text_area :Description %>
+  </p>
+
+  <p>
+    <%= b.submit %>
+  </p>
+
+<%end %>
+<br>
+<button type="button"><%=link_to 'Back', bookings_path %> </button>
+
+
+<td><button type="button"><%=link_to 'Homepage', root_path %> </button></td>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<td><button type="button"><%=link_to 'About Us', about_path %> </button></td>
+<br><br>
