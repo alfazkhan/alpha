@@ -15,13 +15,16 @@ border: 1px solid black;
 <table style="width: 100%">
 
   <tr>
+
     <td>Movie</td>
+    <td>Rating</td>
     <td>Description</td>
   </tr>
   <% @bookings.each do |booking| %>
   <tr>
-    <td><%= booking.id %></td>
+
     <td><%= booking.Movie %></td>
+    <td><%= booking.Rating%><%= '/10' %></td>
     <td><%= booking.Description %></td>
     <td><button type="button"><%=link_to 'Edit', edit_booking_path(booking) %> </button></td>
     <td><button type="button"><%=link_to 'Show', booking_path(booking) %> </button></td>
