@@ -1,7 +1,10 @@
-<h1 style="text-align: center"><u>Edit Booking</u></h1>
+<div class="main-head">
+  <h1>Edit Movie</h1>
+</div>
+<br><br>
 
 <% if @bookings.errors.any? %>
-  <h2>The Following errors Occurred</h2>
+  <h2>The Following errors Occured</h2>
   <ul>
     <% @bookings.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
@@ -9,33 +12,45 @@
   </ul>
 <%end %>
 
-<%= form_for @bookings, url:{action: "update"} do |b| %>
 
-  <p>
-    <%= b.label :Movie %><br>
-    <%= b.text_field :Movie %>
-  </p>
+<%= form_for @bookings, url:{action:"create"}  do |b| %>
+  <div class="form-horizontal">
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Movie %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_field :Movie, class:"form-control", placeholder:"Aquaman", autofocus: true %>
+      </div>
+    </div>
 
-  <p>
-    <%= b.label :Rating %><br>
-    <%= b.select :Rating, [0,1,2,3,4,5,6,7,8,9,10]%>
-  </p>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Rating %>
+      </div>
+      &nbsp&nbsp&nbsp
+      <%= b.select :Rating, [0,1,2,3,4,5,6,7,8,9,10],class:"form-control col-sm-10",default:7%>
+    </div>
 
-  <p>
-    <%= b.label :Description %><br>
-    <%= b.text_area :Description %>
-  </p>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= b.label :Description %>
+      </div>
+      <div class="col-sm-10">
+        <%= b.text_area :Description, class:"form-control" ,rows:10, placeholder:"I Enjoyed the Movie" %>
+      </div>
+    </div>
 
-  <p>
-    <%= b.submit %>
-  </p>
 
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <%= b.submit class:"btn btn-default"%>
+      </div>
+    </div>
+  </div>
 <%end %>
-<br>
-<%=link_to 'Back', bookings_path,class: "btn btn-primary btn-lg" %>
 
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<td><%=link_to 'Homepage', root_path,class: "btn btn-primary btn-lg" %> </td>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<td><%=link_to 'About Us', about_path,class: "btn btn-primary btn-lg" %></td>
-<br><br>
+
+<div class="col-xs-4 col-xs-offset-4">
+  [ <%=link_to 'Cancel And Back to List', bookings_path %> ]
+</div>

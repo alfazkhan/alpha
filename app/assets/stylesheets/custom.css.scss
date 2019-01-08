@@ -1,4 +1,4 @@
-$navbar-default-bg:#ED553B;
+$navbar-default-bg:#1c344e;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -27,8 +27,8 @@ $navbar-default-bg:#ED553B;
 .jumbotron{
   background-image: asset-url('jtron.png');
   background-size: cover;
-  height: 550px;
-  image-resolution: normal;
+  height: 500px;
+  image-resolution: snap;
   image-rendering: smooth;
 }
 
@@ -38,6 +38,13 @@ $navbar-default-bg:#ED553B;
   font-weight: bold;
   font-family: "Poor Richard";
   letter-spacing: 2px;
+}
+
+.main-head{
+  color: #666666;
+  text-align: center;
+  font-family: "Poppins Black";
+  font-size: 2em;
 }
 
 .btn-prop{
@@ -74,7 +81,7 @@ $navbar-default-bg:#ED553B;
   color: #730E15;
 }
 
-footer:ul{
+footer ul{
   float: right;
 }
 
