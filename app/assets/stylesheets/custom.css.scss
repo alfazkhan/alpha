@@ -23,3 +23,65 @@ $navbar-default-bg:#ED553B;
 .center{
   text-align: center;
 }
+
+.jumbotron{
+  background-image: asset-url('jtron.png');
+  background-size: cover;
+  height: 550px;
+  image-resolution: normal;
+  image-rendering: smooth;
+}
+
+.jumbotron h1{
+  color: #000000;
+  text-shadow: #999999;
+  font-weight: bold;
+  font-family: "Poor Richard";
+  letter-spacing: 2px;
+}
+
+.btn-prop{
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 2em;
+  font-family: "Snap ITC";
+}
+
+.btn-prop:hover{
+  background-color: #ffffff;
+  color: #000000;
+
+}
+
+.btn-primary{
+  border-color: #ffffff;
+  color: #ffffff;
+  background-color: #2E2F30;
+  font-size: 1em;
+  font-family: "Poppins Black";
+}
+
+.btn-primary:hover{
+  border-color: #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer{
+  border-top: 1px solid #2E2F30;
+  margin-top: 3em;
+  padding-top: 1em;
+  color: #730E15;
+}
+
+footer:ul{
+  float: right;
+}
+
+footer ul li{
+  float: left;
+}
+
+footer:small{
+  float: left;
+}
