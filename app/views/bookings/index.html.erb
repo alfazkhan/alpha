@@ -1,9 +1,5 @@
-<h1 style="text-align: center"><u>List Of Bookings</u></h1>
+<h1 class="main-head">Movies</h1>
 <br><br><br>
-
-
-<%=link_to 'Create New Booking', new_booking_path %>
-<br><br>
 <head>
   <style>
 table, th, td {
@@ -12,28 +8,22 @@ border: 0.5px solid black;
 }
   </style>
 </head>
-<table style="width: 100%">
+<% @bookings.each do |booking| %>
+<div class="col-xs-8 col-xs-offset-2">
+  <div class="well well-lg">
+    <div class="movie-title">
+      <%= link_to booking.Movie, booking_path(booking) %>
+    </div>
+    <div class="movie-body">
+      <%= truncate(booking.Description, length: 300) %>
+    </div>
+    <div class="movie-actions">
+      <%=link_to 'Edit', edit_booking_path(booking), class: "btn btn-xs btn-primary" %>
+      <%=link_to 'Delete', booking_path(booking), method: :delete, data:{confirm: "Are you Sure?"},class: "btn btn-xs btn-danger" %>
+    </div>
+  </div>
+</div>
 
-  <tr>
+<%end %>
 
-    <td>Movie</td>
-    <td>Rating</td>
-    <td>Description</td>
-  </tr>
-  <% @bookings.each do |booking| %>
-  <tr>
 
-    <td><%= booking.Movie %></td>
-    <td><%= booking.Rating%><%= '/10' %></td>
-    <td><%= booking.Description %></td>
-    <td><%=link_to 'Edit', edit_booking_path(booking)%></td>
-    <td><%=link_to 'Show', booking_path(booking)%></td>
-    <td><%=link_to 'Delete', booking_path(booking), method: :delete, data:{confirm: "Are you Sure?"} %> </td>
-  </tr>
-  <%end %>
-</table>
-<br><br><br><br>
-<td><%=link_to 'Homepage', root_path %></td>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<td><%=link_to 'About Us', about_path %></td>
-<br><br>
