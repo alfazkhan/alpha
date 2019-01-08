@@ -11,7 +11,7 @@ end
 def create
   @bookings = Bookings.new(bookings_params)
   if @bookings.save
-   flash[:notice] = "Data was Added to Database"
+   flash[:success] = "Data was Added to Database"
    redirect_to booking_path(@bookings)
   else
    render 'new'
@@ -29,7 +29,7 @@ end
 def update
   @bookings = Bookings.find(params[:id])
   if @bookings.update(bookings_params)
-    flash[:notice] = "Booking Updated"
+    flash[:success] = "Booking Updated"
     redirect_to booking_path(@bookings)
   else
     render 'edit'
@@ -39,7 +39,7 @@ def update
   def destroy
   @bookings = Bookings.find(params[:id])
   @bookings.destroy
-    flash[:notice]="Movie Deleted from List"
+    flash[:danger]="Movie Deleted from List"
     redirect_to bookings_path(@bookings)
   end
 
