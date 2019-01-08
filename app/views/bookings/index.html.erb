@@ -2,12 +2,12 @@
 <br><br><br>
 
 
-<%=link_to 'Create New Booking', new_booking_path,class: "btn btn-primary btn-lg" %>
+<%=link_to 'Create New Booking', new_booking_path %>
 <br><br>
 <head>
   <style>
 table, th, td {
-border: 2px solid black;
+border: 0.5px solid black;
   border-collapse: collapse;
 }
   </style>
@@ -26,14 +26,14 @@ border: 2px solid black;
     <td><%= booking.Movie %></td>
     <td><%= booking.Rating%><%= '/10' %></td>
     <td><%= booking.Description %></td>
-    <td><%=link_to 'Edit', edit_booking_path(booking),class: "btn btn-primary btn-lg" %></td>
-    <td><%=link_to 'Show', booking_path(booking),class: "btn btn-primary btn-lg" %></td>
-    <td><%=link_to 'Delete', booking_path(booking),class: "btn btn-primary btn-lg", method: :delete, data:{confirm: "Are you Sure?"} %> </td>
+    <td><%=link_to 'Edit', edit_booking_path(booking)%></td>
+    <td><%=link_to 'Show', booking_path(booking)%></td>
+    <td><%=link_to 'Delete', booking_path(booking), method: :delete, data:{confirm: "Are you Sure?"} %> </td>
   </tr>
   <%end %>
 </table>
 <br><br><br><br>
-<td><%=link_to 'Homepage', root_path,class: "btn btn-primary btn-lg" %></td>
+<td><%=link_to 'Homepage', root_path %></td>
 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<td><%=link_to 'About Us', about_path,class: "btn btn-primary btn-lg" %></td>
+<td><%=link_to 'About Us', about_path %></td>
 <br><br>

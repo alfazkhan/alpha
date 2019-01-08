@@ -59,19 +59,13 @@ $navbar-default-bg:#1c344e;
   color: #000000;
 
 }
-
-.btn-primary{
-  border-color: #ffffff;
-  color: #ffffff;
-  background-color: #2E2F30;
-  font-size: 1em;
-  font-family: "Poppins Black";
+.movie-actions{
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
 }
 
-.btn-primary:hover{
-  border-color: #000000;
-  background-color: #ffffff;
-  color: #000000;
+.description{
+  margin-top: 0px;
 }
 
 .footer{
