@@ -1,54 +1,33 @@
 <!doctype html>
 <html>
 <head>
-  <style>
-    .text{
-      font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-      text-align: center;
-      font-size: 50px;
-    }
-    .link{
-      font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-      text-align: center;
-      font-size: 30px;
-    }
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
 
-
-  </style>
   <meta charset="utf-8">
-  <title>Homepage</title>
+  <title>About US</title>
 </head>
 
 <body>
-<div class="center">
-  <%= image_tag 'home logo.jpg' %>
+<div class="main-head">
+  <h4 class="center">
+    <strong>About Us</strong>
+  </h4>
 </div>
 
 <div>
-  <table style="width:100%">
-    <tr>
-      <td><%= image_tag 'a-01.jpg' %></td>
-      <td><%= image_tag 'a-02.jpg' %></td>
-    </tr>
-    <tr>
-      <td><%= image_tag 'a-03.jpg' %></td>
-      <td><%= image_tag 'a-04.jpg' %></td>
-    </tr>
-    <tr>
-      <td><%= image_tag 'a-05.jpg' %></td>
-      <td><%= image_tag 'a-06.jpg' %></td>
-    </tr>
-  </table>
-</div>
-<td><%=link_to 'Home Page', root_path %></td>
-&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="well col-xs-8 col-xs-offset-2">
+    Hii Guys i am Alfaaz Khan, Computer Science Engineer and a Ruby Lover.
+    This Web-App is developed using "Ruby On Rails".
+    Ruby ob Rails is a Web Framework of Ruby Language and it is used to
+    develop dynamic Websites.
 
-<td><%=link_to 'Movie List', bookings_path %></td>
+    Its my 2019 Resolution to learn Ruby and along with that I have some more:
+    <ul>
+      <li>To get Rid of Double Chin</li>
+      <li>To Learn One musical Instrument</li>
+      <li>To get a Rails Client Project</li>
+    </ul>
+  </div>
+</div>
+
 </body>
 </html>
