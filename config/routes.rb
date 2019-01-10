@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   root 'welcome#home'
   get 'about' ,to: 'welcome#about'
   get 'test', to: 'welcome#test'
-  resources :bookings
+  resources :bookings do
+    member do
+      get :delete
+    end
+  end
 
 end

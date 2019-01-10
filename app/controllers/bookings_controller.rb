@@ -8,6 +8,14 @@ def new
 @bookings =Bookings.new
 end
 
+  def delete
+    #@bookings = Bookings.find(params[:id])
+    @bookings = Bookings.find(params[:id])
+    @bookings.destroy
+    flash[:danger]="Movie Deleted from List"
+    redirect_to bookings_path(@bookings)
+  end
+
 def create
   @bookings = Bookings.new(bookings_params)
   if @bookings.save
