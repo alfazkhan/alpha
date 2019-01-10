@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -66,7 +64,7 @@
           <entry key="erb" value="4532" />
           <entry key="js" value="17" />
           <entry key="md" value="144" />
-          <entry key="rb" value="2184" />
+          <entry key="rb" value="2185" />
           <entry key="scss" value="753" />
           <entry key="yml" value="15" />
         </counts>
@@ -77,7 +75,7 @@
           <entry key="Markdown" value="144" />
           <entry key="RHTML" value="4532" />
           <entry key="RegExp" value="4" />
-          <entry key="Ruby" value="2245" />
+          <entry key="Ruby" value="2246" />
           <entry key="SCSS" value="753" />
           <entry key="YAML" value="15" />
         </counts>
@@ -108,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/app/models/users.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="22">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -374,18 +372,17 @@
       <workItem from="1547116852162" duration="80000" />
       <workItem from="1547117114277" duration="117000" />
       <workItem from="1547117825209" duration="239000" />
-      <workItem from="1547133349088" duration="1485000" />
+      <workItem from="1547133349088" duration="2105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84023000" />
+    <option name="totallyTimeSpent" value="84643000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2675305" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2675305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -398,7 +395,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24847561" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24847561" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32840723" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -644,7 +641,7 @@
     <entry file="file://$PROJECT_DIR$/app/models/users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
