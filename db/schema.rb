@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_11_171956) do
+ActiveRecord::Schema.define(version: 2019_01_11_180702) do
 
   create_table "bookings", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "Movie"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_01_11_171956) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer "Rating"
+    t.integer "user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|

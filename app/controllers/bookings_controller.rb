@@ -18,7 +18,7 @@ end
 
 def create
   @bookings = Bookings.new(bookings_params)
-  #@bookings = Users.first
+  @bookings = Users.first
   if @bookings.save
    flash[:success] = "Data was Added to Database"
    redirect_to booking_path(@bookings)

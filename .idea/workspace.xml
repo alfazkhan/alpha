@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/bookings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/bookings.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,7 +46,7 @@
           <entry key="jpg" value="1" />
           <entry key="js" value="3" />
           <entry key="md" value="2" />
-          <entry key="rb" value="54" />
+          <entry key="rb" value="57" />
           <entry key="scss" value="3" />
           <entry key="yml" value="1" />
         </counts>
@@ -56,7 +58,7 @@
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="2" />
           <entry key="RHTML" value="91" />
-          <entry key="Ruby" value="58" />
+          <entry key="Ruby" value="61" />
           <entry key="SCSS" value="3" />
           <entry key="YAML" value="1" />
         </counts>
@@ -67,7 +69,7 @@
           <entry key="erb" value="4667" />
           <entry key="js" value="17" />
           <entry key="md" value="144" />
-          <entry key="rb" value="3065" />
+          <entry key="rb" value="3222" />
           <entry key="scss" value="755" />
           <entry key="yml" value="15" />
         </counts>
@@ -78,7 +80,7 @@
           <entry key="Markdown" value="144" />
           <entry key="RHTML" value="4667" />
           <entry key="RegExp" value="4" />
-          <entry key="Ruby" value="3126" />
+          <entry key="Ruby" value="3283" />
           <entry key="SCSS" value="755" />
           <entry key="YAML" value="15" />
         </counts>
@@ -88,28 +90,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/bookings.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="242">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -118,7 +102,16 @@
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="27" column="2" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="27" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -173,9 +166,10 @@
         <option value="$PROJECT_DIR$/db/migrate/20190111062650_add_user_id.rb" />
         <option value="$PROJECT_DIR$/app/models/users.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/models/bookings.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190111072040_restart.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_form.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20190111180702_add_user_id.rb" />
+        <option value="$PROJECT_DIR$/app/models/bookings.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
@@ -192,8 +186,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="586" />
-    <option name="y" value="285" />
+    <option name="x" value="585" />
+    <option name="y" value="148" />
     <option name="width" value="766" />
     <option name="height" value="581" />
   </component>
@@ -223,20 +217,7 @@
               <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alpha" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alpha" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
@@ -410,10 +391,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100410000" />
+    <option name="totallyTimeSpent" value="101664000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="598" y="209" width="766" height="581" extended-state="0" />
+    <frame x="585" y="148" width="766" height="581" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.3190883" />
@@ -628,13 +609,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/users.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190111062650_add_user_id.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190111072040_restart.rb" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -650,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bookings.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="27" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -671,10 +631,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20190111180702_add_user_id.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="27" column="2" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/bookings.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
