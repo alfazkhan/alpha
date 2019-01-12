@@ -16,16 +16,15 @@
       <ul class="nav navbar-nav">
         <li><%= link_to "Movies List", bookings_path,id:"link"%></li>
 
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" id="link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            Actions
-            <span class="caret">
 
-            </span></a>
-          <ul class="dropdown-menu">
+        <div class="dropdown">
+          <button class="dropbtn">Actions</button>
+          <div class="dropdown-content">
             <li><%= link_to "Add New Rating", new_booking_path%></li>
-          </ul>
-        </li>
+            <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
+            <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
+          </div>
+        </div>
 
 
 

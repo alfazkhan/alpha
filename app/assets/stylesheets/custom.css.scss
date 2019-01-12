@@ -51,7 +51,7 @@ $navbar-default-bg:#1c344e;
   color: #ffffff;
   background-color: #000000;
   font-size: 2em;
-  font-family: "Snap ITC";
+  font-family: "Poppins Black";
 }
 
 .btn-prop:hover{
@@ -104,6 +104,27 @@ footer:small{
   float: left;
 }
 
+
+
+.nav{
+  font-family: "Poppins";
+  font-size: 15px;
+  padding-top: 2px;
+}
+
+
+
+
+.dropbtn {
+  background-color: #1c344e;
+  color: white;
+  padding-top: 14px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -115,10 +136,32 @@ footer:small{
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
   z-index: 1;
+  font-size: 12px;
 }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #1c344e;
+}
+
+.panel-prank{
+  margin-top: 1em;
+  background-color: #003468;
+  color: #fff;
+  font-size: 1em;
+  font-family: "Myriad Pro";
+  padding:10px;
 }

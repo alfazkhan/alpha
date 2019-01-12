@@ -1,13 +1,16 @@
 class BookingsController < ApplicationController
 
+  #index page
   def index
     @bookings= Booking.all
   end
 
-def new
-@bookings =Booking.new
-end
+  #New user Object
+  def new
+    @bookings =Booking.new
+  end
 
+  #delete Option
   def delete
     #@bookings = Bookings.find(params[:id])
     @bookings = Booking.find(params[:id])
@@ -16,7 +19,8 @@ end
     redirect_to bookings_path(@bookings)
   end
 
-def create
+  #Create Action
+  def create
 
   @bookings = Booking.new(bookings_params)
   @bookings.user = User.last
@@ -27,7 +31,7 @@ def create
   else
    render 'new'
   end
-end
+  end
 
 def edit
   @bookings = Booking.find(params[:id])

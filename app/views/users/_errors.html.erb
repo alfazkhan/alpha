@@ -3,10 +3,6 @@
     <div class="col-xs-8 col-xs-offset-2">
       <div class="panel panel-danger">
         <div class="panel-heading">
-          <h2 class="panel-title">
-            <%= pluralize(@user.errors.count, "Error") %>
-            Prevented Movie To Reach Us :-
-          </h2>
           <ul>
             <% @user.errors.full_messages.each do |msg| %>
               <li><%= msg %></li>

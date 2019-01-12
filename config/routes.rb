@@ -9,7 +9,9 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'signup', to: 'users#new'
+  get 'signup', to: 'users#joke'
+
+  get 'okyouaremyfriend', to: 'users#new'
 
   resources :users , except:[:new]
 
