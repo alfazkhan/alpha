@@ -17,6 +17,7 @@ end
   end
 
 def create
+
   @bookings = Booking.new(bookings_params)
   @bookings.user = User.first
 
