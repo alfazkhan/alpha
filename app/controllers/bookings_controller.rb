@@ -19,7 +19,7 @@ end
 def create
 
   @bookings = Booking.new(bookings_params)
-  @bookings.user = User.first
+  @bookings.user = User.last
 
   if @bookings.save
    flash[:success] = "Data was Added to Database"

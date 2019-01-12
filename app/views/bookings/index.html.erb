@@ -16,6 +16,12 @@ border: 0.5px solid black;
     </div>
     <div class="movie-body">
       <%= truncate(booking.Description, length: 300) %>
+      <div class="booking-meta-details">
+      <small>Described By: <%=booking.user.username if booking.user %>
+        &nbsp| Created On: <%=time_ago_in_words(booking.created_at)  %>
+        &nbsp| Last Changed On: <%= time_ago_in_words(booking.updated_at) %>
+      </small>
+      </div>
     </div>
     <div class="movie-actions">
       <%=link_to 'Edit', edit_booking_path(booking), class: "btn btn-xs btn-primary" %>
