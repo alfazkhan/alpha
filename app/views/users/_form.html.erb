@@ -1,4 +1,4 @@
-<%= form_for @user, url:{action: action}  do |b| %>
+<%= form_for @users, url:{action: action}  do |b| %>
   <div class="form-horizontal">
 
 
@@ -31,7 +31,7 @@
 
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <%= b.submit(@user.new_record? ? "Sign Up" : "Update", class:"btn btn-default")%>
+        <%= b.submit(@users.new_record? ? "Sign Up" : "Update", class:"btn btn-default")%>
       </div>
     </div>
   </div>

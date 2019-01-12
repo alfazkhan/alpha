@@ -1,16 +1,19 @@
 class UsersController < ApplicationController
 
+  #index
+
+
   #New user Object
   def new
-  @user=User.new
+  @users=User.new
   end
 
   #New User Create
   def create
-    @user = User.new(users_params)
+    @users = User.new(users_params)
 
-    if @user.save
-      flash[:success] = "Welcome, #{@user.username}"
+    if @users.save
+      flash[:success] = "Welcome, #{@users.username}"
       #redirect_to bookings_path(@user.bookings.id)
     else
       render 'new'
@@ -19,13 +22,13 @@ class UsersController < ApplicationController
 
   #Edit Object
   def edit
-    @user = User.find(params[:id])
+    @users = User.find(params[:id])
   end
 
   #Update Action
   def update
-    @user = User.find(params[:id])
-    if @user.update(users_params)
+    @users = User.find(params[:id])
+    if @users.update(users_params)
       flash[:success] = "User Deatils Updated"
       #redirect_to bookings_path(@user.bookings)
     else
@@ -33,10 +36,18 @@ class UsersController < ApplicationController
     end
   end
 
+  #show action
+
+  def show
+    @users = User.find(params[:id])
+  end
+
   #Just a Prank
   def joke
 
   end
+
+
 
 
   private
