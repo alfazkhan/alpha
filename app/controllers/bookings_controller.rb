@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
 
   before_action :set_booking, only:[:destroy,:update,:show,:edit,:delete]
+  before_action :require_user, except:[:index,:show]
+  before_action :require_same_user, only:[:edit,:update,:delete]
 
   #index page
   def index
@@ -63,6 +65,13 @@ def bookings_params
 
   def set_booking
     @bookings = Booking.find(params[:id])
+  end
+
+  def require_same_user
+    if current_user != @bookings.user
+      flash[:danger]="You can Only make Changes to our Posts"
+      redirect_to root_path
+    end
   end
 
 end
