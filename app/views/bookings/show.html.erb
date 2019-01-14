@@ -23,7 +23,7 @@
       <%=simple_format(@bookings.Description) %>
     <div class="movie-actions">
       <%=link_to 'Back To List', bookings_path,class: "btn btn-xs btn-success" %>
-      <% if logged_in? and current_user == @bookings.user %>
+      <%if logged_in? and (current_user == @bookings.user or current_user.admin?) %>
       <%=link_to 'Edit', edit_booking_path(@bookings), class: "btn btn-xs btn-primary" %>
       <%=link_to 'Delete', delete_booking_path(@bookings), data:{confirm: "Are you Sure?"},class: "btn btn-xs btn-danger" %>
       <%end %>
