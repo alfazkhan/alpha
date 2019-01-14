@@ -27,7 +27,7 @@ class BookingsController < ApplicationController
   def create
 
   @bookings = Booking.new(bookings_params)
-  @bookings.user = User.last
+  @bookings.user = current_user
 
   if @bookings.save
    flash[:success] = "Data was Added to Database"
