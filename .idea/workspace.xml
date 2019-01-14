@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="" />
+    <list default="true" id="cbbd68b8-ba72-4582-9140-09f47a0501c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -42,9 +44,9 @@
           <entry key="css" value="2" />
           <entry key="erb" value="176" />
           <entry key="jpg" value="1" />
-          <entry key="js" value="3" />
+          <entry key="js" value="4" />
           <entry key="md" value="2" />
-          <entry key="rb" value="86" />
+          <entry key="rb" value="87" />
           <entry key="scss" value="9" />
           <entry key="yml" value="1" />
         </counts>
@@ -53,10 +55,10 @@
         <counts>
           <entry key="CSS" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="2" />
           <entry key="RHTML" value="176" />
-          <entry key="Ruby" value="94" />
+          <entry key="Ruby" value="95" />
           <entry key="SCSS" value="9" />
           <entry key="YAML" value="1" />
         </counts>
@@ -65,20 +67,20 @@
         <counts>
           <entry key="Gemfile" value="122" />
           <entry key="erb" value="7435" />
-          <entry key="js" value="17" />
+          <entry key="js" value="18" />
           <entry key="md" value="144" />
-          <entry key="rb" value="5601" />
+          <entry key="rb" value="5605" />
           <entry key="scss" value="1037" />
           <entry key="yml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="17" />
+          <entry key="JavaScript" value="18" />
           <entry key="Markdown" value="144" />
           <entry key="RHTML" value="7435" />
           <entry key="RegExp" value="4" />
-          <entry key="Ruby" value="5719" />
+          <entry key="Ruby" value="5723" />
           <entry key="SCSS" value="1037" />
           <entry key="YAML" value="15" />
         </counts>
@@ -95,24 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/bookings/_movies.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navigation.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -135,20 +119,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-924">
+            <state relative-caret-position="-888">
               <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/bookings/show.html.erb">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+            <state relative-caret-position="-644">
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,14 +177,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20190105090746_add_coloumn.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bookings.controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bookingss_controller.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190107170458_add_rating.rb" />
         <option value="$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_messages.html.erb" />
         <option value="$PROJECT_DIR$/app/views/welcome/about.html.erb" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/db/migrate/20190110153820_users.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/db/migrate/20190110182857_add_id.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20190111062650_add_user_id.rb" />
         <option value="$PROJECT_DIR$/app/models/users.rb" />
@@ -229,6 +223,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
@@ -274,6 +270,13 @@
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
@@ -326,6 +329,12 @@
               <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
               <item name="alpha" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="alpha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="alpha" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -499,12 +508,12 @@
       <workItem from="1547388645515" duration="352000" />
       <workItem from="1547392416936" duration="4098000" />
       <workItem from="1547396996087" duration="8967000" />
-      <workItem from="1547447535994" duration="3606000" />
+      <workItem from="1547447535994" duration="3876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152472000" />
+    <option name="totallyTimeSpent" value="152742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,7 +557,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/bookings/_form.html.css" />
     <entry file="file://$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -568,13 +576,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190110153820_users.rb" />
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20190110182857_add_id.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/users.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20190111062650_add_user_id.rb" />
@@ -837,8 +838,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-924">
+        <state relative-caret-position="-888">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-644">
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
