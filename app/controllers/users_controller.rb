@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
 
   before_action :set_user,only:[:edit,:update,:show]
-  before_action :require_same_user, only: [:edit,:update]
+  before_action :require_same_user, only: [:edit,:update,:delete]
+  before_action :require_admin ,only:[:destroy]
 
   #index
   def index
@@ -18,6 +19,7 @@ class UsersController < ApplicationController
     @users = User.new(users_params)
 
     if @users.save
+      session[:user_id]=@users.id
       flash[:success] = "Welcome, #{@users.username}"
       redirect_to users_path(@users.id)
     else
@@ -53,7 +55,12 @@ class UsersController < ApplicationController
 
   end
 
-
+  def delete
+    @users=User.find(params[:id])
+    @users.destroy
+    flash[:danger] = "User and Movies Deleted"
+    redirect_to users_path
+  end
 
 
   private
@@ -67,8 +74,15 @@ class UsersController < ApplicationController
   end
 
   def require_same_user
-    if current_user != @users
+    if current_user != @users and !current_user.admin?
       flash[:danger] = "You can Only Make Changes to Your Account"
+      redirect_to root_path
+    end
+  end
+
+  def require_admin
+    if logged_in? and !current_user.admin?
+      flash[:danger] = "Only Admin Can perform this Action"
       redirect_to root_path
     end
   end

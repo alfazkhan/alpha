@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_12_085813) do
+ActiveRecord::Schema.define(version: 2019_01_14_163630) do
 
   create_table "bookings", options: "ENGINE=InnoDB DEFAULT CHARSET=latin1", force: :cascade do |t|
     t.string "Movie"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_01_12_085813) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.boolean "admin", default: false
   end
 
 end

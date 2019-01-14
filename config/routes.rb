@@ -13,10 +13,15 @@ Rails.application.routes.draw do
 
   get 'okyouaremyfriend', to: 'users#new'
 
-  resources :users , except:[:new]
+  resources :users , except:[:new] do
+    member do
+      get :delete
+    end
+  end
 
   get 'get_in', to:'sessions#new'
   post 'get_in', to:'sessions#create'
   get 'bye', to:'sessions#delete'
+
 
 end

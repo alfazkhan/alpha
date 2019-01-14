@@ -68,7 +68,7 @@ def bookings_params
   end
 
   def require_same_user
-    if current_user != @bookings.user
+    if current_user != @bookings.user or current_user.admin == false
       flash[:danger]="You can Only make Changes to our Posts"
       redirect_to root_path
     end

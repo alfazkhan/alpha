@@ -36,10 +36,10 @@
 
 
       <ul class="nav navbar-nav navbar-right">
-        <%if logged_in? %>
+        <%if logged_in?%>
         <li><%= link_to "Logout Bye!", bye_path,id:"link"%></li>
           <div class="dropdown">
-            <button class="dropbtn">Your Profile</button>
+            <button class="dropbtn">Your Profile <%if current_user.admin? %><%= "Admin" %><%end %></button>
             <div class="dropdown-content">
               <li><%= link_to "Edit Your Profile", edit_user_path(current_user)%></li>
               <li><%= link_to "Show My Profile", user_path(current_user)%></li>
