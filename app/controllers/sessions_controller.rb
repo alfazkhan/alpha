@@ -18,7 +18,7 @@ class SessionsController < ApplicationController
 
   end
 
-  def destroy
+  def delete
     session[:user_id]=nil
     flash[:danger] = "Everyone Left Me Now you too, Come Back Later!"
     redirect_to root_path
