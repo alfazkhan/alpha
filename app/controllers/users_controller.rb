@@ -19,7 +19,7 @@ class UsersController < ApplicationController
 
     if @users.save
       flash[:success] = "Welcome, #{@users.username}"
-      #redirect_to bookings_path(@user.bookings.id)
+      redirect_to users_path(@users.id)
     else
       render 'new'
     end
