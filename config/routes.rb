@@ -17,6 +17,6 @@ Rails.application.routes.draw do
 
   get 'get_in', to:'sessions#new'
   post 'get_in', to:'sessions#create'
-  delete 'bye', to:'sessions#delete'
+  get 'bye', to:'sessions#delete'
 
 end
