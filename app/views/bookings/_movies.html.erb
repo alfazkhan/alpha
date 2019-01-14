@@ -7,9 +7,9 @@
       <div class="movie-body">
         <%= truncate(booking.Description, length: 300) %>
         <div class="booking-meta-details">
-          <small>Described By: <%=booking.user.username if booking.user %>
+          <small>Reviewed By: <%=booking.user.username if booking.user %>
             &nbsp| Created On: <%=time_ago_in_words(booking.created_at)  %>
-            &nbsp| Last Changed On: <%= time_ago_in_words(booking.updated_at) %>
+            &nbsp| Last Updated On: <%= time_ago_in_words(booking.updated_at) %>
           </small>
         </div>
       </div>

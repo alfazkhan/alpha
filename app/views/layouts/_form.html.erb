@@ -13,7 +13,7 @@
 
     <div class="form-group">
       <div class="col-sm-2 control-label">
-        <%= b.label :Rating %>
+        <%= b.label :"Your Rating" %>
       </div>
       &nbsp&nbsp&nbsp
       <%= b.select :Rating, [0,1,2,3,4,5,6,7,8,9,10],class:"form-control col-sm-10",default:7%>
@@ -24,7 +24,7 @@
         <%= b.label :'Tell Us your Experience!' %>
       </div>
       <div class="col-sm-10">
-        <%= b.text_area :Description, class:"form-control" ,rows:10, placeholder:"I Enjoyed the Movie" %>
+        <%= b.text_area :Description, class:"form-control" ,rows:10, placeholder:"The Movie Was Enjoyable." %>
       </div>
     </div>
 
