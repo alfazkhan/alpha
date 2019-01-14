@@ -1,4 +1,5 @@
-<nav class="navbar navbar-default", content="width=device-width">
+
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,24 +15,43 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Movies List", bookings_path,id:"link"%></li>
+        <li><%= link_to "Movies", bookings_path,id:"link"%></li>
+        <li><%= link_to "Users", users_path,id:"link"%></li>
 
+        <%if logged_in? %>
 
         <div class="dropdown">
           <button class="dropbtn">Actions</button>
           <div class="dropdown-content">
             <li><%= link_to "Add New Rating", new_booking_path%></li>
-            <li><%= link_to "Users", users_path%></li>
+            <li><%= link_to "My Ratings", user_path(current_user)%></li>
             <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
             <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
           </div>
         </div>
 
-
+          <% end %>
 
       </ul>
 
 
-    </div>
-  </div>
+      <ul class="nav navbar-nav navbar-right">
+        <%if logged_in? %>
+        <li><%= link_to "Logout Bye!", bye_path,id:"link",method: :delete%></li>
+          <div class="dropdown">
+            <button class="dropbtn">Your Profile</button>
+            <div class="dropdown-content">
+              <li><%= link_to "Edit Your Profile", edit_user_path(current_user)%></li>
+              <li><%= link_to "Show My Profile", user_path(current_user)%></li>
+              <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
+              <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
+            </div>
+          </div>
+          <% else %>
+         <li> <%= link_to "SignUp", signup_path,id:"link" %></li>
+          <li><%= link_to "Login", get_in_path,id:"link"%></li>
+        <%end %>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>

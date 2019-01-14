@@ -1,8 +1,10 @@
 class UsersController < ApplicationController
 
+  before_action :set_user,only:[:edit,:update,:show]
+
   #index
   def index
-    @users= User.all
+    @users= User.paginate(page: params[:page], per_page:5)
   end
 
   #New user Object
@@ -24,12 +26,12 @@ class UsersController < ApplicationController
 
   #Edit Object
   def edit
-    @users = User.find(params[:id])
+
   end
 
   #Update Action
   def update
-    @users = User.find(params[:id])
+
     if @users.update(users_params)
       flash[:success] = "User Deatils Updated"
       #redirect_to bookings_path(@user.bookings)
@@ -41,7 +43,8 @@ class UsersController < ApplicationController
   #show action
 
   def show
-    @users = User.find(params[:id])
+
+    @users_bookings= @users.bookings.paginate(page: params[:page], per_page:5)
   end
 
   #Just a Prank
@@ -56,6 +59,10 @@ class UsersController < ApplicationController
 
   def users_params
     params.require(:user).permit(:username,:email,:password)
+  end
+
+  def set_user
+    @users = User.find(params[:id])
   end
 
 end

@@ -9,8 +9,13 @@
 
 <h4 align="center"><%= @users.username %> Movies</h4>
 
-<%= render 'bookings/movies', obj:@users.bookings %>
-
+<div class="center">
+  <%= will_paginate @users_bookings %>
+</div>
+<%= render 'bookings/movies', obj:@users_bookings %>
+<div class="center">
+  <%= will_paginate @users_bookings%>
+</div>
 
 
 

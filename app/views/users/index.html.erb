@@ -1,6 +1,9 @@
 <h1 class="main-head">All Users</h1>
 <br><br>
 
+<div class="center">
+  <%= will_paginate %>
+</div>
 
 <div align="center">
 <% @users.each do |user| %>
@@ -16,4 +19,8 @@
   </div>
   </div>
 <%end%>
+</div>
+
+<div class="center">
+  <%= will_paginate %>
 </div>

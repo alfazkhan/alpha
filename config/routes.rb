@@ -15,4 +15,8 @@ Rails.application.routes.draw do
 
   resources :users , except:[:new]
 
+  get 'get_in', to:'sessions#new'
+  post 'get_in', to:'sessions#create'
+  delete 'bye', to:'sessions#destroy'
+
 end
