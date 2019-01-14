@@ -13,7 +13,7 @@
           </small>
         </div>
       </div>
-      <% if logged_in? and current_user == booking.user or logged_in? and booking.user.username == "Alfaaz Khan Admin" %>
+      <% if logged_in? and current_user == booking.user %>
       <div class="movie-actions">
         <%=link_to 'Edit', edit_booking_path(booking), class: "btn btn-xs btn-primary" %>
 
