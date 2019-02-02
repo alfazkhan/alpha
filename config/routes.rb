@@ -23,5 +23,5 @@ Rails.application.routes.draw do
   post 'get_in', to:'sessions#create'
   get 'bye', to:'sessions#delete'
 
-
+  resources :categories, except:[:delete]
 end

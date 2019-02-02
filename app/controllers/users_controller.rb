@@ -37,7 +37,7 @@ class UsersController < ApplicationController
 
     if @users.update(users_params)
       flash[:success] = "User Deatils Updated"
-      #redirect_to bookings_path(@user.bookings)
+      redirect_to users_path(@users.id)
     else
       render 'edit'
     end
