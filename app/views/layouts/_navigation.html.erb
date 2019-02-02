@@ -19,38 +19,46 @@
         <li><%= link_to "Users", users_path,id:"link"%></li>
         <li><%= link_to "New Category", new_category_path,id:"link"%></li>
         <%if logged_in? %>
+            <div class="dropdown">
+              <button class="dropbtn">Actions</button>
+              <div class="dropdown-content">
+                <li><%= link_to "Add New Rating", new_booking_path%></li>
+                <li><%= link_to "My Ratings", user_path(current_user)%></li>
+                <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
+                <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
+              </div>
+            </div>
 
-        <div class="dropdown">
-          <button class="dropbtn">Actions</button>
-          <div class="dropdown-content">
-            <li><%= link_to "Add New Rating", new_booking_path%></li>
-            <li><%= link_to "My Ratings", user_path(current_user)%></li>
-            <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
-            <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
-          </div>
-        </div>
-
-          <% end %>
+        <% end %>
 
       </ul>
 
+      <ul class="nav navbar-nav navbar-center">
+        <%if logged_in?%>
+          <%if current_user.admin?%>
+            <div style="margin: 10px;margin-left: 7em;">
+              <div class="btn btn-success btn-sm">Admin</div>
+            </div>
+          <%end %>
+        <%end %>
+      </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <%if logged_in?%>
-        <li><%= link_to "Logout Bye!", bye_path,id:"link"%></li>
-          <div class="dropdown">
-            <button class="dropbtn">Your Profile <%if current_user.admin? %><%= "Admin" %><%end %></button>
-            <div class="dropdown-content">
-              <li><%= link_to "Edit Your Profile", edit_user_path(current_user)%></li>
-              <li><%= link_to "Show My Profile", user_path(current_user)%></li>
+            <li><%= link_to "Logout Bye!", bye_path,id:"link"%></li>
+                <div class="dropdown">
+                  <button class="dropbtn">Your Profile </button>
+                  <div class="dropdown-content">
+                    <li><%= link_to "Edit Your Profile", edit_user_path(current_user)%></li>
+                    <li><%= link_to "Show My Profile", user_path(current_user)%></li>
 
-              <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
-              <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
-            </div>
-          </div>
+                    <a href="https://www.facebook.com/alfaz.khan.1276">Facebook</a>
+                    <a href="https://www.instagram.com/i_am_alfaaz">Instagram</a>
+                  </div>
+                </div>
           <% else %>
-         <li> <%= link_to "SignUp", signup_path,id:"link" %></li>
-          <li><%= link_to "Login", get_in_path,id:"link"%></li>
+             <li> <%= link_to "SignUp", signup_path,id:"link" %></li>
+              <li><%= link_to "Login", get_in_path,id:"link"%></li>
         <%end %>
       </ul>
     </div><!-- /.navbar-collapse -->
