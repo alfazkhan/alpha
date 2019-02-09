@@ -1,4 +1,5 @@
-$navbar-default-bg:#1c344e;
+/*$navbar-default-bg:#1c344e;*/
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -70,6 +71,13 @@ $navbar-default-bg:#1c344e;
   padding-top: 5px;
 }
 
+.movie-image{
+  height: 300px;
+  width: auto;
+  image-rendering: optimizeSpeed;
+  align-content: center;
+}
+
 .description{
   margin-top: 0px;
 }
@@ -125,7 +133,7 @@ footer:small{
 }
 
 .dropbtn {
-  background-color: #1c344e;
+  background-color: #222222;
   color: white;
   padding-top: 14px;
   font-size: 15px;
@@ -163,7 +171,7 @@ footer:small{
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #1c344e;
+  background-color: #222222;
 }
 
 .panel-prank{

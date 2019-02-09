@@ -1,9 +1,15 @@
+
 <% obj.each do |booking| %>
-  <div class="col-xs-8 col-xs-offset-2">
+  <div class="col-xs-4 col-xs-offset-4">
     <div class="well well-lg">
       <div class="movie-title">
         <%= link_to booking.Movie, booking_path(booking) %>
       </div>
+
+      <div class="movie-title">
+        <%= image_tag booking.image, class: "movie-image" %>
+      </div>
+
       <div class="movie-body">
         <%= truncate(booking.Description, length: 300) %>
         <div class="booking-meta-details">

@@ -18,3 +18,17 @@
 //= require_tree .
 //= require jquery
 //= require jquery_ujs
+
+
+$(document).ready( function(){
+    $('#auto').load('load.php');
+    refresh();
+});
+
+function refresh()
+{
+    setTimeout( function() {
+        $('#auto').fadeOut('slow').load('time').fadeIn('slow');
+        refresh();
+    }, 100);
+}

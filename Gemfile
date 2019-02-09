@@ -6,6 +6,10 @@ ruby '2.5.3'
 gem 'will_paginate' , '3.1.5'
 gem 'bootstrap-will_paginate' , '1.0.0'
 
+gem 'sinatra', '>= 0'
+gem 'haml', '>= 0'
+gem 'json', '>=0'
+
 gem 'rails', '~> 5.2.2'
 gem 'bcrypt', '~> 3.1.7'
 gem 'puma', '~> 3.11'

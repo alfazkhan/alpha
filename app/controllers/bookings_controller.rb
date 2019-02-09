@@ -60,7 +60,7 @@ def update
 private
 
 def bookings_params
-  params.require(:booking).permit(:Movie,:Description,:Rating,:user_id)
+  params.require(:booking).permit(:Movie,:Description,:Rating,:user_id,:image, category_ids: [])
   end
 
   def set_booking
